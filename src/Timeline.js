@@ -14,7 +14,7 @@ class Header extends React.Component {
           <div className="circle"></div>
         </div>
 
-        <span className="title">
+        <span className="title pt-3">
           {this.props.title}
         </span>
 
@@ -66,7 +66,10 @@ class App extends React.Component {
     return (
       <div className="notificationsFrame container">
         <div className="panel">
-          <Header />
+          <Header title="Timeline" />
+          <Header title="Profile" />
+          <Header title="Settings" />
+          <Header title="Chat" />
           <Content />
         </div>
       </div>
